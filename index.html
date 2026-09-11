@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PantryPal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🥕 PantryPal</h1>
+    <p>Find a simple meal using what you already have.</p>
+  </header>
+
+  <nav>
+    <button onclick="showPage('find')">🍳 Find New Meal</button>
+    <button onclick="showPage('favourites')">⭐ My Favourites</button>
+  </nav>
+
+  <main>
+
+    <!-- Find New Meal -->
+    <section id="findPage">
+
+      <h2>What ingredients do you have?</h2>
+      <p>Select the ingredients you currently have:</p>
+
+      <div class="ingredients">
+
+        <label>
+          <input type="checkbox" value="egg">
+          🥚 Egg
+        </label>
+
+        <label>
+          <input type="checkbox" value="rice">
+          🍚 Rice
+        </label>
+
+        <label>
+          <input type="checkbox" value="chicken">
+          🍗 Chicken
+        </label>
+
+        <label>
+          <input type="checkbox" value="tomato">
+          🍅 Tomato
+        </label>
+
+        <label>
+          <input type="checkbox" value="lettuce">
+          🥬 Lettuce
+        </label>
+
+        <label>
+          <input type="checkbox" value="bread">
+          🍞 Bread
+        </label>
+
+        <label>
+          <input type="checkbox" value="tuna">
+          🐟 Tuna
+        </label>
+
+        <label>
+          <input type="checkbox" value="avocado">
+          🥑 Avocado
+        </label>
+
+        <label>
+          <input type="checkbox" value="cheese">
+          🧀 Cheese
+        </label>
+
+        <label>
+          <input type="checkbox" value="onion">
+          🧅 Onion
+        </label>
+
+      </div>
+
+      <button class="primary-btn" onclick="findMeal()">
+        🔍 Find My Meal
+      </button>
+
+      <div id="message"></div>
+
+      <div id="mealResult"></div>
+
+    </section>
+
+
+    <!-- Favourites -->
+    <section id="favouritesPage" style="display: none;">
+
+      <h2>⭐ My Favourites</h2>
+
+      <div id="favouritesList"></div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
