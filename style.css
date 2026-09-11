@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8f3;
+  color: #26352a;
+  padding-bottom: 30px;
+}
+
+header {
+  background: #7ca982;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+nav button {
+  border: none;
+  background: #edf4ed;
+  color: #355b3b;
+  padding: 12px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background: #dcebdd;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 25px 18px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+main p {
+  margin-bottom: 20px;
+  color: #68756b;
+}
+
+.ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.ingredients label {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #e1e7e1;
+  cursor: pointer;
+}
+
+.ingredients label:hover {
+  background: #f0f7f0;
+}
+
+.ingredients input {
+  margin-right: 8px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #5f8f66;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #4d7954;
+}
+
+#message {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.meal-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.meal-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.meal-info {
+  margin: 10px 0;
+  color: #617064;
+}
+
+.missing {
+  background: #fff4df;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 12px 0;
+  color: #795b25;
+}
+
+.favourite-btn,
+.another-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.favourite-btn {
+  background: #fff1b8;
+}
+
+.another-btn {
+  background: #edf4ed;
+  color: #355b3b;
+}
+
+.favourite-btn:hover {
+  background: #ffe79a;
+}
+
+.another-btn:hover {
+  background: #dcebdd;
+}
+
+.favourite-item {
+  background: white;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 1px solid #e1e7e1;
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .ingredients {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav button {
+    width: 100%;
+  }
+}
